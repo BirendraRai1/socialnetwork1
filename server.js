@@ -20,7 +20,7 @@ const container = require('./container');
 container.resolve(function(users, _, admin, home, group, members, privatechat){
     
     mongoose.Promise = global.Promise;
-    mongoose.connect('mongodb://localhost/nehayalla');
+    mongoose.connect('mongodb://localhost/upendra');
     
     const app = SetupExpress();
     
