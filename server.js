@@ -20,7 +20,11 @@ const container = require('./container');
 container.resolve(function(users, _, admin, home, group, members, privatechat){
     
     mongoose.Promise = global.Promise;
-    mongoose.connect('mongodb://localhost/nehayalla', {useMongoClient: true});
+    mongoose.connect('mongodb://localhost/chatCat');
+
+    mongoose.connection.once('open',function(){
+    console.log("database connection open success");
+});
     
     const app = SetupExpress();
     
@@ -77,7 +81,6 @@ container.resolve(function(users, _, admin, home, group, members, privatechat){
             secret: 'addyourownsecretkey',
             resave: false,
             saveUninitialized: false,
-            store: new MongoStore({mongooseConnection: mongoose.connection})
         }));
         
         app.use(flash());
