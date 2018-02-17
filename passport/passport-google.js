@@ -18,7 +18,7 @@ passport.deserializeUser((id, done) => {
 passport.use(new GoogleStrategy({
     clientID: secret.google.clientID,
     clientSecret: secret.google.clientSecret,
-    callbackURL: 'http://ec2-18-219-127-19.us-east-2.compute.amazonaws.com/auth/google/callback',
+    callbackURL: 'http://ec2-18-219-90-242.us-east-2.compute.amazonaws.com/auth/google/callback',
     passReqToCallback: true
     
 }, (req, accessToken, refreshToken, profile, done) => {
