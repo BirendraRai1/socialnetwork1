@@ -1,7 +1,7 @@
 
 # SocialChatting ~ A platform where you can join group and can make group chat as well as make friends and can do personal chat
 
-Live at  http://ec2-18-219-127-19.us-east-2.compute.amazonaws.com/
+Live at  ec2-18-219-90-242.us-east-2.compute.amazonaws.com
 
  
 
