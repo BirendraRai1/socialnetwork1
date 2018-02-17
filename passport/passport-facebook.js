@@ -19,7 +19,7 @@ passport.use('facebook',new FacebookStrategy({
     clientID: secret.facebook.clientID,
     clientSecret: secret.facebook.clientSecret,
     profileFields: ['email', 'displayName'],
-    callbackURL: 'http://ec2-18-219-166-212.us-east-2.compute.amazonaws.com/auth/facebook/callback',
+    callbackURL: 'http://ec2-18-219-127-19.us-east-2.compute.amazonaws.com/auth/facebook/callback',
     passReqToCallback: true
     
 }, (req, token, refreshToken, profile, done) => {
